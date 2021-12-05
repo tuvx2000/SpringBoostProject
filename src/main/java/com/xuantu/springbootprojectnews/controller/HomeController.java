@@ -1,4 +1,4 @@
-package com.xuantu.springbootproject.controller;
+package com.xuantu.springbootprojectnews.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
