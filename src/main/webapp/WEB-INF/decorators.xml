@@ -13,5 +13,9 @@
     <decorator name="trang-chu" page="web.jsp">
         <pattern>/*</pattern>
     </decorator>
+    <!-- apply Sitemesh default template -->
+    <decorator name="admin" page="admin.jsp">
+        <pattern>/admin*</pattern>
+    </decorator>
 
 </decorators>

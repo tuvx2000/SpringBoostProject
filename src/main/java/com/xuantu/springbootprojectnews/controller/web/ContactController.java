@@ -1,4 +1,4 @@
-package com.xuantu.springbootprojectnews.controller;
+package com.xuantu.springbootprojectnews.controller.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +10,7 @@ public class ContactController {
 
     @RequestMapping(value = "/contact", method = RequestMethod.GET)
     public ModelAndView homePage() {
-        ModelAndView mav = new ModelAndView("contact-us");
+        ModelAndView mav = new ModelAndView("web/contact-us");
         return mav;
     }
 }
