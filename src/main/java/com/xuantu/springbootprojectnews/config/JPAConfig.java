@@ -4,6 +4,7 @@ package com.xuantu.springbootprojectnews.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
@@ -20,6 +21,7 @@ import java.sql.Statement;
 import java.util.Properties;
 
 @Configuration
+@EnableJpaRepositories(basePackages = {"com.xuantu.springbootprojectnews.repository"})
 @EnableTransactionManagement
 
 public class JPAConfig {
