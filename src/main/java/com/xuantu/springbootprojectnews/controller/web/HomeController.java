@@ -9,14 +9,14 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller(value ="homeControllerOfUser")
 public class HomeController {
-    @Autowired
-    NewService newService;
+//    @Autowired
+//    NewService newService;
 
     @RequestMapping(value = "/trang-chu", method = RequestMethod.GET)
     public ModelAndView homePage() {
         ModelAndView mav = new ModelAndView("web/home");
-        System.out.println("con cac gi v ?");
-        System.out.println(newService.dumpxx().getContent());
+//        System.out.println("con cac gi v ?");
+//        System.out.println(newService.dumpxx().getContent());
 
 
         return mav;
