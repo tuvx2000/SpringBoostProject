@@ -4,8 +4,7 @@ import com.xuantu.springbootprojectnews.entity.NewEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 
-@NoRepositoryBean
 public interface NewsRepository
-        extends JpaRepository<NewEntity,Long>
+     //   extends JpaRepository<NewEntity,Long>
 {
 }
